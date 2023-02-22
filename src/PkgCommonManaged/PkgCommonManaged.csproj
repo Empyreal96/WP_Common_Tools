@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42F1B0B5-31A6-4A85-98D6-11817B85D48C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.WindowsPhone.ImageUpdate.PkgCommon</RootNamespace>
+    <AssemblyName>PkgCommonManaged</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\BuildPathOption.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\BuildType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\BuildTypeParser.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\CabArchiver.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\CpuId.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\CpuIdParser.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DELTA_FILE_TYPE.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DELTA_FLAG_TYPE.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DELTA_INPUT.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DiffError.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DiffFileEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DiffOptions.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DiffPkg.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DiffPkgBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DiffPkgManifest.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\DiffType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\FBMerger.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\FileEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\FileEntryBase.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\FileType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\IDiffEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\IDiffPkg.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\IFileEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\IPkgBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\IPkgFileSigner.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\IPkgInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\MergeErrors.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\MergeGroup.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\MergeResult.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\MergeWorker.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\MSDeltaInterOp.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\NativeMethods.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\OwnerType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\Package.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PackageException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PackageStyle.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PackageTools.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PackageType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PkgBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PkgConstants.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PkgConvertDSM.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PkgFileSignerDefault.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PkgManifest.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PkgMerger.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\PKRBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\ReleaseType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\StringToEnum.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\VersionInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\WPCabPackage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\WPCanonicalPackage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\WPExtractedPackage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\WPInstalledPackage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgCommon\WPPackageBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CabApiWrapper\CabApiWrapper.csproj">
+      <Project>{adb8c411-2d3f-41ec-876b-e7a02b25187d}</Project>
+      <Name>CabApiWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

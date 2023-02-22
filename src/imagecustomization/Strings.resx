@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="UnableToValidateSourceUnknownSettingsPath"><value>Unable validate Source extension because settings Path '{0}' could not be found in the image's policy. </value></data>
+  <data name="UnknownConditionName"><value>Target '{0}' contains an unknown condition named '{1}'. Cannot determine if this condition is valid or not.</value></data>
+  <data name="DuplicateTargets"><value>Target '{0}' is defined in multiple places.</value></data>
+  <data name="PathInvalidPercent"><value>Windows environment variables must be declared with $(this) format; %this% is not supported.</value></data>
+  <data name="MismatchedTargets"><value>Attempted to merge two variants ({0}, {1}) with different sets of Target references.</value></data>
+  <data name="EmptySettingsGroups"><value>Variant '{0}' Settings Groups list is Empty. Settings Groups will be ignored.</value></data>
+  <data name="UnableToValidateSettingValueUnknownSettingsPath"><value>Unable validate Value because settings Path '{0}' could not be found in the image's policy.</value></data>
+  <data name="txtApplicationProvXML"><value>Application ProvXML</value></data>
+  <data name="CurrentFileMacro"><value>CurrentFileDir</value></data>
+  <data name="DuplicateSettings"><value>The setting '{0}' under the path '{1}' has multiple definitions.</value></data>
+  <data name="AssetPackageConflict"><value>Asset '{0}' in package '{1}' has a package conflict with Asset '{2}' in package '{3}' for file installed to '{4}'.</value></data>
+  <data name="DuplicateSettingGroups"><value>The variant '{0}' contains a setting path '{1}' with multiple definitions.</value></data>
+  <data name="InvalidConditionName"><value>Target '{0}' contains an invalid condition named '{1}'.</value></data>
+  <data name="PathFileDoesNotExist"><value>{0} file path '{1}' not found on disk.</value></data>
+  <data name="EmptyDataAssetGroups"><value>Data Asset Groups list is Empty. Data Asset Groups will be ignored.</value></data>
+  <data name="UnableToValidateSettingAssetsUnknownSettingsPath"><value>Unable validate Assets because settings Path '{0}' could not be found in the image's policy.</value></data>
+  <data name="UnableToValidateSourceUnknownSettingName"><value>Unable validate Source extension because the setting '{1}' under the path '{0}' does not exist.</value></data>
+  <data name="UnableToValidateAssetTypeUnknownSettingsPath"><value>Unable to validate Mobile Operator assets because the settings Path '{0}' could not be found in the image's policy. </value></data>
+  <data name="PathEmptySource"><value>{0} path is empty.</value></data>
+  <data name="EmptyApplicationGroup"><value>Application Group list is Empty. Application Group will be ignored.</value></data>
+  <data name="DuplicateAssets"><value>The asset '{0}' under the path '{1}' has multiple definitions.</value></data>
+  <data name="EmptyTargetRefs"><value>Variant '{0}' TargetRefs list is Empty. Variants must contain at least one valid TargetRef.</value></data>
+  <data name="SettingDoesNotSupportOperatorAssets"><value>The setting '{1}' under the path '{0}' does not support Mobile Operator assets.</value></data>
+  <data name="VariantedImageTimeOnlySettingsGroup"><value>Settings Path '{0}' is ImageTimeOnly and cannot be used in non-static variants.</value></data>
+  <data name="PathDoesNotExist"><value>{0} file or directory path '{1}' not found on disk.</value></data>
+  <data name="EmptyApplications"><value>Applications list is Empty. Applications will be ignored.</value></data>
+  <data name="txtApplicationSource"><value>Application Source</value></data>
+  <data name="txtAssetSource"><value>Asset Source</value></data>
+  <data name="UnknownSettingName"><value>The setting '{1}' under the path '{0}' does not exist.</value></data>
+  <data name="UnableToValidateDestinationUnknownSettingName"><value>Unable validate Destination extension because the setting '{1}' under the path '{0}' does not exist.</value></data>
+  <data name="InvalidConditionValue"><value>The Condition '{1}' under the path '{0}' has an invalid value: '{2}'. {3}</value></data>
+  <data name="AtomicSettingMissing"><value>Atomic Settings Group '{0}' is missing Setting '{1}'. When using a Setting that references a Settings Group Policy marked as Atomic, all Settings defined by that Policy must be included.</value></data>
+  <data name="UnsupportedFileType"><value>The setting asset group '{1}' under the path '{0}' does not support assets of filetype '{2}'. Use '{3}' instead.</value></data>
+  <data name="UnableToValidateSettingNameUnknownSettingsPath"><value>Unable validate Name because settings Path '{0}' could not be found in the image's policy.</value></data>
+  <data name="UnableToValidateAssetTypeUnknownSettingName"><value>Unable to validate Mobile Operator assets because the setting '{1}' under the path '{0}' does not exist.</value></data>
+  <data name="UnknownSettingsPath"><value>Settings Path '{0}' could not be found in the image's policy. This could be due to a mismatch between the features selected for the image and the customization settings selected.</value></data>
+  <data name="CurrentFileDirOverride"><value>Your environment variable, '{0}', will be overridden.</value></data>
+  <data name="AssetWithDuplicateFileName"><value>More than one assets with file name '{0}' under path '{1}'</value></data>
+  <data name="AssetInvalidTargetFileName"><value>Asset type '{0}' declared under path '{1}' has invalid characters in attribute "TargetFileName" attribute '{2}'</value></data>
+  <data name="txtApplicationLicense"><value>Application License</value></data>
+  <data name="InvalidSettingValue"><value>The setting '{1}' under the path '{0}' has an invalid value: {2}.</value></data>
+  <data name="SettingPartitionInvalid"><value>The setting '{1}' under the path '{0}' is defined by a policy setting which uses invalid partition '{2}'; must be set to one of {3}.</value></data>
+  <data name="PathUnresolvedVariable"><value>{0} path '{1}' has errors: {2}.</value></data>
+  <data name="EmptyTargetState"><value>TargetState is Empty, will be ignored.</value></data>
+  <data name="UnableToValidateSettingValueUnknownSettingName"><value>Unable validate Value because the setting '{1}' under the path '{0}' does not exist.</value></data>
+  <data name="EmptySettingsGroup"><value>Settings Group list is Empty. Settings Group will be ignored.</value></data>
+  <data name="AssetsNotSupported"><value>Assets under the path '{0}' is not supported by the image policy.   </value></data>
+  <data name="EmptyDataAssetsGroup"><value>Data Assets list is Empty. Data Assets will be ignored.</value></data>
+  <data name="AssetNotFound"><value>No asset with file name '{0}' declared under path '{1}'</value></data>
+  <data name="AssetWithDuplicateDisplayName"><value>The setting group under the path '{0}' has two Assets using the same Display Name '{1}'.</value></data>
+  <data name="EmptyTargetStates"><value>No TargetState specified, will be ignored</value></data>
+  <data name="UnknownTarget"><value>Unknown target '{0}' referenced. Make sure it is defined.</value></data>
+  <data name="AssetTargetConflict"><value>The asset target '{0}' has two sources: '{1}' and '{2}'.</value></data>
+  <data name="PathNotAbsolute"><value>{0} path '{1}' does not resolve to an absolute path.</value></data>
+  <data name="PathFileNameContainsVars"><value>{0} path '{1}' cannot contain environment variables in the file name.</value></data>
+  <data name="DuplicateApplications"><value>Multiple Application entries are using the same source file '{0}' in the same way. </value></data>
+  <data name="DuplicateDataAssets"><value>Multiple DataAsset entries are using the same source file '{0}' in the same way.</value></data>
+  <data name="UnableToValidateAssetFieldUnknownAssetName"><value>Unable to validate '{0}' for asset '{1}'  under setting path '{2}' because the asset name '{3}' could not be found in the image's policy.</value></data>
+  <data name="AssetNotSupported"><value>Asset type '{0}' declared under the path '{1}' is not supported by the image policy</value></data>
+  <data name="UnableToValidateSettingAssetsUnknownSettingName"><value>Unable validate Assets because the setting '{1}' under the path '{0}' does not exist.</value></data>
+  <data name="EmptyTargets"><value>Targets list is empty, will be ignored.</value></data>
+  <data name="UnableToValidateAssetFieldUnknownSettingsPath"><value>Unable to validate '{0}' for asset '{1}' because the path '{2}' could not be found in the image's policy.</value></data>
+  <data name="ApplicationPartitionInvalid"><value>Application '{0}' uses invalid TargetPartition '{1}'; must be set to one of {2}.</value></data>
+  <data name="UnableToValidateDestinationUnknownSettingsPath"><value>Unable validate Destination extension because settings Path '{0}' could not be found in the image's policy.</value></data>
+  <data name="txtDataAssetSource"><value>Data Asset Source</value></data>
+  <data name="NullSettingValue"><value>The setting '{1}' under path '{0}' requires a value</value></data>
+  </root>

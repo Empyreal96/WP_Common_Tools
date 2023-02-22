@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA228A11-7209-41B1-B660-07BF53DD2741}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>imagecustomization</RootNamespace>
+    <AssemblyName>imagecustomization</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\Application.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\Applications.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\Asset.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\Condition.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\CustomizationApplicationDestination.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\CustomizationAssetOwner.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\CustomizationDataAssetType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\DataAsset.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\DataAssets.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\ImageCustomizations.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\Import.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\Setting.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\Settings.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\StaticVariant.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\Target.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\TargetRef.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\TargetState.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization.XML\Variant.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\CustomContent.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\CustomContentGenerator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\CustomizationError.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\CustomizationErrorSeverity.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\CustomizationException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\CustomizationFile.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\CustomizationPackage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\Customizations.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\Extensions.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\IDefinedIn.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Customization\Strings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Strings.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Customization.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CabApiWrapper\CabApiWrapper.csproj">
+      <Project>{adb8c411-2d3f-41ec-876b-e7a02b25187d}</Project>
+      <Name>CabApiWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MCSFOffline\MCSFOffline.csproj">
+      <Project>{F73FF52B-40F9-41B8-9F15-C69D0ED5A9FB}</Project>
+      <Name>MCSFOffline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVOffline\MVOffline.csproj">
+      <Project>{5823940C-3546-4222-89FF-22C067CCA316}</Project>
+      <Name>MVOffline</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PkgCommonManaged\PkgCommonManaged.csproj">
+      <Project>{42f1b0b5-31a6-4a85-98d6-11817b85d48c}</Project>
+      <Name>PkgCommonManaged</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PkgGenCommon\PkgGenCommon.csproj">
+      <Project>{7EB6ED08-F824-4322-AB8A-F4C863623C60}</Project>
+      <Name>PkgGenCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

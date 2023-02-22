@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FC3CD7C-4FBC-4E3C-B450-96002026F27A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>USB_Test_Infrastructure</RootNamespace>
+    <AssemblyName>USB_Test_Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="USB_Test_Infrastructure\AccessRights.cs" />
+    <Compile Include="USB_Test_Infrastructure\AsyncResult.cs" />
+    <Compile Include="USB_Test_Infrastructure\AsyncResultNoResult.cs" />
+    <Compile Include="USB_Test_Infrastructure\CreateFileDisposition.cs" />
+    <Compile Include="USB_Test_Infrastructure\DeviceInformationData.cs" />
+    <Compile Include="USB_Test_Infrastructure\DeviceInterfaceData.cs" />
+    <Compile Include="USB_Test_Infrastructure\DeviceInterfaceDetailData.cs" />
+    <Compile Include="USB_Test_Infrastructure\DIGCF.cs" />
+    <Compile Include="USB_Test_Infrastructure\DTSFUsbStream.cs" />
+    <Compile Include="USB_Test_Infrastructure\DTSFUsbStreamReadAsyncResult.cs" />
+    <Compile Include="USB_Test_Infrastructure\DTSFUsbStreamWriteAsyncResult.cs" />
+    <Compile Include="USB_Test_Infrastructure\FileFlags.cs" />
+    <Compile Include="USB_Test_Infrastructure\FindFileData.cs" />
+    <Compile Include="USB_Test_Infrastructure\NativeMethods.cs" />
+    <Compile Include="USB_Test_Infrastructure\OnDeviceConnect.cs" />
+    <Compile Include="USB_Test_Infrastructure\OnDeviceDisconnect.cs" />
+    <Compile Include="USB_Test_Infrastructure\ShareModes.cs" />
+    <Compile Include="USB_Test_Infrastructure\SystemTime.cs" />
+    <Compile Include="USB_Test_Infrastructure\Tests.cs" />
+    <Compile Include="USB_Test_Infrastructure\TimeZoneInformation.cs" />
+    <Compile Include="USB_Test_Infrastructure\UsbConnectionManager.cs" />
+    <Compile Include="USB_Test_Infrastructure\UsbControlLineState.cs" />
+    <Compile Include="USB_Test_Infrastructure\UsbControlRequest.cs" />
+    <Compile Include="USB_Test_Infrastructure\UsbRequest.cs" />
+    <Compile Include="USB_Test_Infrastructure\WinError.cs" />
+    <Compile Include="USB_Test_Infrastructure\WinUsbInterfaceDescriptor.cs" />
+    <Compile Include="USB_Test_Infrastructure\WinUsbPipeInformation.cs" />
+    <Compile Include="USB_Test_Infrastructure\WinUsbPipeType.cs" />
+    <Compile Include="USB_Test_Infrastructure\WinUsbPolicyType.cs" />
+    <Compile Include="USB_Test_Infrastructure\WinUsbSetupPacket.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LOGUTILS\LOGUTILS.csproj">
+      <Project>{cd1f472d-6c60-466d-81a8-d9ce003cbcfd}</Project>
+      <Name>LOGUTILS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

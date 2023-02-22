@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="FORMAT_SPEED"><value>({0:0.00} MB/s)</value></data>
+  <data name="DEVICE_NO"><value>[Device {0,2}]</value></data>
+  <data name="DEVICE_ID"><value>Device ID currently: {0}</value></data>
+  <data name="STATUS_FLASHING"><value>Status : FLASHING</value></data>
+  <data name="ERROR_RESET_BOOT_MODE"><value>Failed to reset to specified boot mode. Error {0}</value></data>
+  <data name="ERRORS"><value>ERRORS
+======</value></data>
+  <data name="LOGGING_SIMPLEIO_TO_ETL"><value>Logging SimpleIO to ETL file: {0:s}</value></data>
+  <data name="REMOVE_PLATFORM_ID"><value>Success, device removed platform ID info. ID now: {0}</value></data>
+  <data name="RESET_BOOT_MODE"><value>Success, device resetting to specified boot mode.</value></data>
+  <data name="ERROR_FILE_NOT_FOUND"><value>Could not locate {0}, please verify that the file specified is accessible.</value></data>
+  <data name="WIM_TRANSFER_RATE"><value>WIM transfer completed in {0} seconds.</value></data>
+  <data name="ERROR_TIMED_OUT"><value>A wait timed out: </value></data>
+  <data name="STATUS_LOGS"><value>Status : GETTING LOGS - Please keep device connected</value></data>
+  <data name="STATUS_DONE"><value>Status : DONE</value></data>
+  <data name="FORCE_OPTION_DEPRECATED"><value>WARNING: Use of -force no longer has any effect.</value></data>
+  <data name="ERROR_UNEXPECTED_DEVICESTATUS"><value>Unexpected DeviceStatus</value></data>
+  <data name="TRANSFER_STATISTICS"><value>Transferred {0:0.00} MB in {1:0.00} seconds, overall rate {2:0.00} MB/s.</value></data>
+  <data name="ERROR_BOOT_WIM"><value>Failed to boot specified WIM.  Please ensure the device supports this operation.</value></data>
+  <data name="SERIAL_NO_FORMAT"><value>{0,-10} : {1,3}</value></data>
+  <data name="ERROR_SKIP_TRANSFER"><value>Failed to skip transfer.</value></data>
+  <data name="STATUS_TRANSFER_WIM"><value>Status : SENDING WIM</value></data>
+  <data name="STATUS_ERROR"><value>Status : ERROR - Please refer below for more details</value></data>
+  <data name="ERROR_NO_PLATFORM_ID"><value>No platform ID override info cleared.</value></data>
+  <data name="ID"><value>ID     : {0}</value></data>
+  <data name="USAGE"><value>Usage: FFUTool -flash &lt;path to FFU file to apply to disk&gt; [path to flashing WIM]
+       FFUTool -uefiflash &lt;path to FFU, flashed from UEFI directly&gt;
+       FFUTool -fastflash &lt;path to FFU, flashed from UEFI directly&gt;
+       FFUTool -wim &lt;path to WIM to boot from RAM&gt;
+       FFUTool -skip
+       FFUTool -list
+       FFUTool -massStorage
+       FFUTool -clearId
+       FFUTool -serial
+       FFUTool -setBootMode &lt;boot mode&gt; &lt;optional profile name&gt;
+       FFUTool -getServicingLogs &lt;output path&gt;
+       FFUTool -getFlashingLogs &lt;output path&gt;
+       FFUTool -noLog
+
+       flash and fastflash use the FastFlash protocol, if the client supports it, to improve bandwidth.
+       uefiflash uses the traditional flash protocol
+
+       noLog is an optional parameter to not generate the log files that FFUTool generates by default;
+       it may be used with any other parameters.
+     </value></data>
+  <data name="SERIAL_NO"><value>Serial No.</value></data>
+  <data name="LOGGING_UFP_TO_LOG"><value>Logging UFP to LOG file: {0:s}</value></data>
+  <data name="STATUS_CONNECTED"><value>Status : CONNECTED</value></data>
+  <data name="ERROR_AT_LEAST_ONE_DEVICE_FAILED"><value>At least one of the devices failed to execute the operation.</value></data>
+  <data name="STATUS_SKIPPING"><value>Status : SKIPPING</value></data>
+  <data name="DEVICE_TYPE"><value>Type   : {0}</value></data>
+  <data name="ERROR_WIM_BOOT"><value>WIM boot failed.  Please reset your device and use "ffutool -uefiFlash" to flash your image.</value></data>
+  <data name="STATUS_BOOTING_TO_WIM"><value>Status : BOOTING WIM</value></data>
+  <data name="STATUS_SKIPPED"><value>Status : SKIPPED</value></data>
+  <data name="NO_CONNECTED_DEVICES"><value>
+There are no connected devices.</value></data>
+  <data name="ERROR_RESET_MASS_STORAGE_MODE"><value>Failed to reset to mass storage mode.</value></data>
+  <data name="BOOTING_WIM"><value>Booting WIM: {0:s}</value></data>
+  <data name="ERROR_FFU"><value>An FFU error occurred: </value></data>
+  <data name="ERROR_MORE_THAN_ONE_DEVICE"><value>One connected device is expected in order to flash, {0} found.</value></data>
+  <data name="RESET_MASS_STORAGE_MODE"><value>Success, device resetting to mass storage mode.</value></data>
+  <data name="DEVICES_FOUND"><value>
+Devices Found: {0}</value></data>
+  <data name="LOGS_PATH"><value>Log path: {0}</value></data>
+  <data name="NAME"><value>Name   : {0}</value></data>
+  </root>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0986DD53-5646-4E70-9241-67962A3D15F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.WindowsPhone.Imaging</RootNamespace>
+    <AssemblyName>imagecommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.WindowsPhone.CompDB\AssemblyIdentity.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\BSPCompDB.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\BuildCompDB.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBChunkMapItem.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBChunkMapping.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBFeature.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBFeaturePackage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBLanguage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBPackageInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBPackageInfoComparer.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBPayloadInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBPublishingInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBPublishingPackageInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\CompDBResolution.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\DesktopCompDBGen.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\DeviceCompDB.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\DeviceConditionAnswers.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\EqualityComparerCompDBPackage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\PrepCBSFeature.cs" />
+    <Compile Include="Microsoft.WindowsPhone.CompDB\UpdateCompDB.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BuildPaths.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DeviceLayoutInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DeviceLayoutInputv2.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\EqualityComparerPublishingPackage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\FeatureIdentifierPackage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\FMCollection.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\FMCollectionItem.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\FMCollectionManifest.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\FullFlashUpdateHeaders.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\FullFlashUpdateImage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageCommonException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageGenerator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageGeneratorParameters.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageSigner.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\InputHelpers.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\InputIntegerRule.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\InputPartition.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\InputRule.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\InputRules.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\InputStore.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\InputStringRule.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\IPayloadWrapper.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ManifestWrapper.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\OEMDevicePlatformInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\OutputWrapper.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PlatformManifestGen.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PropsFile.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PropsProject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PublishingPackageInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PublishingPackageInfoComparer.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PublishingPackageList.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\SecurityWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.BSPCompDB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.BuildCompDB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.CompDBChunkMapping.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.CompDBPublishingInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.DeviceCompDB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.UpdateCompDB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.DeviceLayout.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.DeviceLayoutv2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.FMCollection.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.OEMDevicePlatform.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.PropsProject.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.Imaging.PublishingPackageInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CabApiWrapper\CabApiWrapper.csproj">
+      <Project>{adb8c411-2d3f-41ec-876b-e7a02b25187d}</Project>
+      <Name>CabApiWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FeatureAPI\FeatureAPI.csproj">
+      <Project>{13B3B911-49AD-4239-BB5D-B626BA0D6D7D}</Project>
+      <Name>FeatureAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PkgCommonManaged\PkgCommonManaged.csproj">
+      <Project>{42f1b0b5-31a6-4a85-98d6-11817b85d48c}</Project>
+      <Name>PkgCommonManaged</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlatformManifest\PlatformManifest.csproj">
+      <Project>{35ce3e8b-700e-47c4-bcad-0fe0884033be}</Project>
+      <Name>PlatformManifest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

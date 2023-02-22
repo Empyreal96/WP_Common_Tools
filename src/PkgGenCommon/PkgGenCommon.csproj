@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EB6ED08-F824-4322-AB8A-F4C863623C60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon</RootNamespace>
+    <AssemblyName>PkgGenCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone.Test.TestMetadata">
+      <HintPath>..\..\..\..\..\WP_CPTT\Windows Kits\10\Tools\bin\i386\Microsoft.Phone.Test.TestMetadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\ApplicationPkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\AppResourcePkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\BCDStorePkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\BinaryPartitionPkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\BuildPass.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\CertStoreBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\ComBase.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\ComClass.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\ComDll.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\ComInterface.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\ComPkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\DriverPkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\FailureAction.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\FailureActionsPkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\FileGroup.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\FileInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\FilterGroup.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\IPackageSetBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\OSComponentPkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\PackageGenerator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\PackageProject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\PackageSetBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\PackageSetBuilderBase.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\PackageTocBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\PkgElement.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\PkgFile.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\PkgObjectBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\Reference.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\RegGroup.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\RegImport.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\RegistryKey.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\RegValue.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\RestrictionType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\Security.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\ServicePkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\SvcDll.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\SvcEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\SvcExe.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents.Internal\SvcHostGroup.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\ApplicationBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\AppResourceBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\AuthenticationCapabitities.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\AuthenticationLevel.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\BCDStoreBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\BinaryPartitionBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\ComServerBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\DriverBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\ErrorControlOption.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\FailureActionType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\FileBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\FileGroupBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\FilterGroupBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\ImpersonationLevel.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\OSComponentBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\PackageLogger.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\PackageWrapper.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\PkgObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\PkgPlugin.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\PkgXmlException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\RegistryKeyBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\RegistryKeyGroupBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\SatelliteId.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\SatelliteType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\ServiceBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\ServiceStartMode.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\ServiceType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\SvcHostGroupBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\ThreadingModel.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BaseComponents\XmlToLinqExtensions.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\Application.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\AppResource.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\BCDStore.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\BinaryPartition.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\ComServer.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\Driver.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\ModernComActivation.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\ModernComThreading.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\ModernComTrustLevel.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\OSComponent.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\Service.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\SvcHostGroup.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins\WinRTHost.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.Interfaces\IPackageGenerator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.Interfaces\IPkgLogger.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.Interfaces\IPkgPlugin.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.Interfaces\IPkgProject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.Interfaces\WellknownPkgAttributes.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DevPropKey.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DevPropType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverPackageEnumFilesFlag.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverPackageOpenFlag.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverStoreConfigureFlags.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverStoreImportFlag.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverStoreObjectType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverStoreOfflineAddDriverPackageFlags.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverStoreOpenFlag.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverStorePublishFlag.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverStoreReflectCriticalFlag.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverStoreReflectFlag.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DriverStoreSetObjectPropertyFlag.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\DrvStore.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\IMacroResolver.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\InfFile.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\InfFileConverter.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\ISecurityPolicyCompiler.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\KnownMacros.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\Macro.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\MacroDelegate.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\MacroResolveOptions.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\MacroResolver.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\MacroStack.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\MacroTable.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\MiscUtils.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\ObjectType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\PkgGenException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\PkgGenProjectException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\PkgGenResources.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\ProcessorArchitecture.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon\XmlConstants.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.ProjSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.PkgGen.cfg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CabApiWrapper\CabApiWrapper.csproj">
+      <Project>{adb8c411-2d3f-41ec-876b-e7a02b25187d}</Project>
+      <Name>CabApiWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\imagestorageservicemanaged\imagestorageservicemanaged.csproj">
+      <Project>{FEDD0ABF-8619-4114-A19D-D21ADD95679F}</Project>
+      <Name>imagestorageservicemanaged</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PkgCommonManaged\PkgCommonManaged.csproj">
+      <Project>{42f1b0b5-31a6-4a85-98d6-11817b85d48c}</Project>
+      <Name>PkgCommonManaged</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

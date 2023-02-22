@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D178ED9E-08AC-4220-92EB-1CAACB2750E4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool</RootNamespace>
+    <AssemblyName>OemCustomizationTool</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\Configuration.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\ConfigXmlException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\Customization.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\CustomizationPkgBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\CustomizationXmlException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\InputParameters.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\Program.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\RegFileHandler.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\RegFilePartitionInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\RegFileWriter.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\Settings.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\TraceLevel.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\TraceLogger.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\XmlFile.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.OemCustomizationTool\XmlFileHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Schemas.Config.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas.Customization.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Schemas.Registry.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pkggen.cfg.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PkgCommonManaged\PkgCommonManaged.csproj">
+      <Project>{42f1b0b5-31a6-4a85-98d6-11817b85d48c}</Project>
+      <Name>PkgCommonManaged</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PkgGenCommon\PkgGenCommon.csproj">
+      <Project>{7eb6ed08-f824-4322-ab8a-f4c863623c60}</Project>
+      <Name>PkgGenCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

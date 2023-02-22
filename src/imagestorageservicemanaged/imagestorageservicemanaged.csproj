@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FEDD0ABF-8619-4114-A19D-D21ADD95679F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.WindowsPhone.Imaging</RootNamespace>
+    <AssemblyName>imagestorageservicemanaged</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ApplicationTypeValue.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BaseIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdConverter.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElement.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementBoolean.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementBootDevice.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementDataType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementDataTypeInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementDataTypes.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementDevice.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementDeviceGptInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementDeviceInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementDeviceMbrInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementDeviceRamdiskInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementInteger.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementIntegerList.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementIntegerListInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementObjectList.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementObjectListInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementRawDataTypeInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementsInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementString.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdElementValueTypeInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdObjectInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdObjects.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdObjectsInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdRegData.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BcdRegValue.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BCDXsdValidator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BCDXsdValidatorException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BlockAllocationTable.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BlockIoIdentifierFactory.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BlockIoType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BootConfigurationDatabase.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\BootIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\CdRomIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\CRC32.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DataBlockEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DataBlockSource.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DataBlockStream.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DataTypeChoice.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DeviceTypeChoice.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DiskLocation.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DiskStream.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DiskStreamSource.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\DynamicHardDisk.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ElementClass.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ElementDeviceType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ElementFormat.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\FileIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\FileSystemSourceAllocation.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\FullFlashUpdateType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\GptDataEntryGenerator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\GptPartitionInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\GptPartitionTypeChoice.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\GuidPartitionTable.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\GuidPartitionTableEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\GuidPartitionTableHeader.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\HardDiskIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\IBlockIoIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\IBlockStreamSource.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\IDeviceIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\IEntryGenerator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageConstants.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImagePayloadSource.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageStorage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageStorageException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageStorageManager.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageStoreHeader.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImageStructures.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\IntPtrExtensions.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ISourceAllocation.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\IVirtualHardDisk.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\LocateIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\LogFunction.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\MasterBootRecord.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\MasterBootRecordMetadataPartition.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\MbrDataEntryGenerator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\MbrPartitionEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\MetadataPartitionEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\MetadataPartitionHeader.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\NativeImaging.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\NativeServiceHandle.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\OfflineRegistryHandle.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PartitionFormat.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PartitionIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PartitionIdentifierEx.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\PayloadReader.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\RamDiskIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\RemovableDiskIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\SafeVolumeHandle.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\SerialPortIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\StorePayload.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\StructVersionAttribute.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\UdpIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ValidationEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ValueTypeChoice.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VhdCommon.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VhdExtensions.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VhdFooter.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VhdHeader.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VhdType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VirtualDiskIdentifier.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VirtualDiskPayloadGenerator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VirtualDiskPayloadManager.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VirtualDiskSourceAllocation.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VirtualDiskStream.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\VirtualMemoryPtr.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\Win32ExportException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\Win32Exports.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BcdLayout.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\imagecommon\imagecommon.csproj">
+      <Project>{0986dd53-5646-4e70-9241-67962a3d15f6}</Project>
+      <Name>imagecommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

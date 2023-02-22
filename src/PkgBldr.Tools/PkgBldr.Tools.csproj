@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE96CCB8-33E4-4D3F-96CE-0C5FDFA7F554}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.CompPlat.PkgBldr.Tools</RootNamespace>
+    <AssemblyName>PkgBldr.Tools</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\AclCollection.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\AmbiguousArgumentException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\ArgumentAlreadyDeclaredException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\BadGroupException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\CmdArgsParser.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\CommandLineParser.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\CommonUtils.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\ConstValue.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\ConvertDSM.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\DirectoryAcl.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\EmptyArgumentDeclaredException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\FileAcl.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\FileUtils.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\HiveToRegConverter.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\IDeploymentLogger.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\IUException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\Logger.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\LogUtil.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\LongPath.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\LongPathCommon.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\LongPathDirectory.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\LongPathFile.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\NativeMethods.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\NativeSecurityMethods.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\NoSuchArgumentException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\OfflineRegUtils.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\OffRegNativeMethods.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\ORRegistryKey.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\ParseException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\ParseFailedException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\PEFileUtils.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\PrivilegeNames.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\ProcessPrivilege.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegAclWithFullAcl.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegBuilder.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegistryAcl.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegistryStoredAcl.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegistryUtils.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegistryValueType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegUtil.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegValidator.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegValueInfo.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RegValueType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RequiredParameterAfterOptionalParameterException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\ResourceAcl.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\ResourceAclComparer.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\RgaBuilder.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\SdCommand.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\SddlNormalizer.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\SecurityInformationFlags.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\SecurityUtils.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\SystemRegistryHiveFiles.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Tools\TokenPrivilege.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

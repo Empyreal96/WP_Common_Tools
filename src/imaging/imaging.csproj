@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{040A69B8-3442-4042-86F9-775814BA6EE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>imaging</RootNamespace>
+    <AssemblyName>imaging</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.Diagnostics.Telemetry\EventDescriptionAttribute.cs" />
+    <Compile Include="Microsoft.Diagnostics.Telemetry\EventProviderAttribute.cs" />
+    <Compile Include="Microsoft.Diagnostics.Telemetry\TelemetryEventSource.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\Imaging.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImagingException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ImagingTelemetryLogger.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\UpdateMain.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CabApiWrapper\CabApiWrapper.csproj">
+      <Project>{adb8c411-2d3f-41ec-876b-e7a02b25187d}</Project>
+      <Name>CabApiWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeviceLayoutValidation\DeviceLayoutValidation.csproj">
+      <Project>{907a0472-e7eb-418b-8947-102dd5438460}</Project>
+      <Name>DeviceLayoutValidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FeatureAPI\FeatureAPI.csproj">
+      <Project>{13B3B911-49AD-4239-BB5D-B626BA0D6D7D}</Project>
+      <Name>FeatureAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\imagecommon\imagecommon.csproj">
+      <Project>{0986dd53-5646-4e70-9241-67962a3d15f6}</Project>
+      <Name>imagecommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\imagecustomization\imagecustomization.csproj">
+      <Project>{AA228A11-7209-41B1-B660-07BF53DD2741}</Project>
+      <Name>imagecustomization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\imagestorageservicemanaged\imagestorageservicemanaged.csproj">
+      <Project>{fedd0abf-8619-4114-a19d-d21add95679f}</Project>
+      <Name>imagestorageservicemanaged</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PkgCommonManaged\PkgCommonManaged.csproj">
+      <Project>{42f1b0b5-31a6-4a85-98d6-11817b85d48c}</Project>
+      <Name>PkgCommonManaged</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WimInterop\WimInterop.csproj">
+      <Project>{c7d22405-ec3f-4303-bc4a-ad82b339b995}</Project>
+      <Name>WimInterop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

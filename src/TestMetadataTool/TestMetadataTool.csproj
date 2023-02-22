@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{76F77A28-A262-4ED0-A4CB-BB37FDEF4169}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Microsoft.Phone.Test.TestMetadata</RootNamespace>
+    <AssemblyName>TestMetadataTool</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone.Test.TestMetadata">
+      <HintPath>..\..\..\..\..\..\WP_CPTT\Windows Kits\10\Tools\bin\i386\Microsoft.Phone.Test.TestMetadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\BinaryDependencyResolver.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\CommandBase.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\Constants.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\DefaultDependencyResolver.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\DumpImports.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\ExplicitDependency.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\GeneratePackageDependency.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\HelpCommand.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\IBinaryDependencyParent.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\IBinaryDependencyResolver.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\NoDpendencyResolver.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\Package.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\PackageFile.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\PackageFileRepository.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\PackageRepository.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\PackageValidator.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\ResolvedDependency.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata.Commands\SingleDependnecyResolver.cs" />
+    <Compile Include="Microsoft.Phone.Test.TestMetadata\TestMetadataTool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CabApiWrapper\CabApiWrapper.csproj">
+      <Project>{adb8c411-2d3f-41ec-876b-e7a02b25187d}</Project>
+      <Name>CabApiWrapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Microsoft.Tools.IO\Microsoft.Tools.IO.csproj">
+      <Project>{daae934f-87f5-4b5e-880b-089ac2262f69}</Project>
+      <Name>Microsoft.Tools.IO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PkgCommonManaged\PkgCommonManaged.csproj">
+      <Project>{42f1b0b5-31a6-4a85-98d6-11817b85d48c}</Project>
+      <Name>PkgCommonManaged</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

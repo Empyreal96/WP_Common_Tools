@@ -1,0 +1,13 @@
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+[StructLayout(LayoutKind.Sequential, Size = 4)]
+[NativeCppClass]
+internal struct gcroot_003CMicrosoft_003A_003AWindows_003A_003AFlashing_003A_003APlatform_003A_003AGenericProgress_0020_005E_003E
+{
+}
+[StructLayout(LayoutKind.Sequential, Size = 4)]
+[NativeCppClass]
+internal struct gcroot_003CMicrosoft_003A_003AWindows_003A_003AFlashing_003A_003APlatform_003A_003ADeviceNotificationCallback_0020_005E_003E
+{
+}

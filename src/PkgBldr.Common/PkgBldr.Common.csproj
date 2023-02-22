@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A02F4CB5-1790-43CA-B2F5-234077E4DD71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.CompPlat.PkgBldr</RootNamespace>
+    <AssemblyName>PkgBldr.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.BasePlugins\BcdStore.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\AccessControlPolicy.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\Capability.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\ConstantStrings.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\DriverAccess.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\DriverAccessType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\GlobalVariables.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\HashCalculator.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\PrivateResource.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\PrivateResourceClaimerType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\RegistryValueType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\ResourceType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\SdRegType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\SdRegValue.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\SidBuilder.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security.SecurityPolicy\WnfValue.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Security\GlobalSecurity.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Tools\BuildType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Tools\CpuType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Tools\PkgBldrCmd.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base.Tools\WowBuildType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\Bld.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\Build.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\BuildPass.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\CommonSettings.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\Config.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\ConversionType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\CSI.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\ExitStatus.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\IMacroResolver.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\KnownMacros.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\Macro.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\MacroDelegate.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\MacroResolveOptions.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\MacroResolver.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\MacroStack.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\MacroTable.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\PKG.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\PkgBldrHelpers.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\PkgBldrLoader.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\PkgConstants.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\PkgGenException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\PkgGenProjectException.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\PkgGenResources.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\PkgPlugin.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\PluginType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\Run.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\SatelliteId.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\SatelliteType.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\SchemaSet.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\WM.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Base\XSD.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Interfaces\IPkgPlugin.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Interfaces\IPkgProject.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Interfaces\WellknownPkgAttributes.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\BootCritical.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\BootRecovery.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\COM.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Configuration.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Directories.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Directory.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Driver.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Drivers.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\FailureActions.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\File.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Files.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\FirewallRule.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\GenericCommands.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Identity.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Instrumentation.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Language.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Localization.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Macro.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Macros.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Membership.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Migration.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Mof.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Principal.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Principals.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\PrivateResources.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\RegKey.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\RegKeys.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\RegValue.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Service.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\ServiceGroup.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\ServiceTrigger.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\SystemProtection.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Task.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\Tasks.cs" />
+    <Compile Include="Microsoft.CompPlat.PkgBldr.Plugins.WmToCsi\TrustInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.CompPlat.PkgBldr.Base.Resources.Macros_CsiToPkg.xml" />
+    <Content Include="Microsoft.CompPlat.PkgBldr.Base.Resources.Macros_CsiToWm.xml" />
+    <Content Include="Microsoft.CompPlat.PkgBldr.Base.Resources.Macros_PkgToWm.xml" />
+    <Content Include="Microsoft.CompPlat.PkgBldr.Base.Resources.Macros_Policy.xml" />
+    <Content Include="Microsoft.CompPlat.PkgBldr.Base.Resources.Macros_WmToCsi.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\imagestorageservicemanaged\imagestorageservicemanaged.csproj">
+      <Project>{FEDD0ABF-8619-4114-A19D-D21ADD95679F}</Project>
+      <Name>imagestorageservicemanaged</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\microsoft.windowsphone.security.securitypolicycompiler\microsoft.windowsphone.security.securitypolicycompiler.csproj">
+      <Project>{eab584d9-8024-471e-b707-a87bbd958236}</Project>
+      <Name>microsoft.windowsphone.security.securitypolicycompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PkgBldr.Tools\PkgBldr.Tools.csproj">
+      <Project>{ae96ccb8-33e4-4d3f-96ce-0c5fdfa7f554}</Project>
+      <Name>PkgBldr.Tools</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

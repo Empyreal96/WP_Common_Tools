@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{877515E4-001D-4905-9616-7574BC7876B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.WindowsPhone.ImageUpdate.Tools.Common</RootNamespace>
+    <AssemblyName>ToolsCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\AclCollection.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\AmbiguousArgumentException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ArgumentAlreadyDeclaredException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ATTACH_VIRTUAL_DISK_FLAG.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ATTACH_VIRTUAL_DISK_PARAMETERS.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ATTACH_VIRTUAL_DISK_VERSION.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\BadGroupException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\CmdArgsParser.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\CmdHandler.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\CmdModes.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\CommandLineParser.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\CommonUtils.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ConstValue.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\CREATE_VIRTUAL_DISK_FLAG.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\CREATE_VIRTUAL_DISK_PARAMETERS.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\CREATE_VIRTUAL_DISK_PARAMETERS_V1.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\CREATE_VIRTUAL_DISK_VERSION.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\DETACH_VIRTUAL_DISK_FLAG.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\DevicePaths.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\DirectoryAcl.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\EmptyArgumentDeclaredException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\FileAcl.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\FileUtils.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\HiveToRegConverter.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\IDeploymentLogger.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ImagePartition.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ImagePartitionCollection.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\IUException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\IULogger.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\LoggingLevel.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\LogString.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\LogUtil.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\LongPath.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\LongPathCommon.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\LongPathDirectory.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\LongPathFile.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\MobileCoreImage.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\MobileCorePartitionType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\MobileCoreVHD.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\MobileCoreWIM.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\MultiCmdHandler.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\NativeMethods.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\NativeSecurityMethods.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\NoSuchArgumentException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\OfflineRegUtils.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\OffRegNativeMethods.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\OPEN_VIRTUAL_DISK_FLAG.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\OPEN_VIRTUAL_DISK_PARAMETERS.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\OPEN_VIRTUAL_DISK_VERSION.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ORRegistryKey.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ParseException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ParseFailedException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\PEFileUtils.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\PrivilegeNames.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ProcessPrivilege.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\QuietCmdHandler.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegAclWithFullAcl.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegistryAcl.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegistryStoredAcl.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegistryUtils.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegistryValueType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegUtil.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegValidator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegValueInfo.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RegValueType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RequiredParameterAfterOptionalParameterException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ResourceAcl.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\ResourceAclComparer.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\RgaBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\SddlNormalizer.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\SecurityInformationFlags.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\SecurityUtils.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\StringExtensions.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\SystemRegistryHiveFiles.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\TokenPrivilege.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\VHDImagePartition.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\VHD_STORAGE_TYPE_DEVICE.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\VirtualDiskLib.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\VIRTUAL_DISK_ACCESS_MASK.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\VIRTUAL_STORAGE_TYPE.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\VIRTUAL_STORAGE_TYPE_VENDOR.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\WPSecurityPolicy.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\XmlValidator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\XsdValidator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.ImageUpdate.Tools.Common\XsdValidatorException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

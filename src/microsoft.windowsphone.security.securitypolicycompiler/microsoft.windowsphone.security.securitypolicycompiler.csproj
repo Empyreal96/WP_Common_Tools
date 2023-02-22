@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAB584D9-8024-471E-B707-A87BBD958236}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Microsoft.WindowsPhone.Security.SecurityPolicyCompiler</RootNamespace>
+    <AssemblyName>microsoft.windowsphone.security.securitypolicycompiler</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\AccessRightHelper.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\AppBinaries.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Application.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\ApplicationFile.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\ApplicationFiles.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Authorization.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\AuthorizationRule.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\BaseRule.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Capabilities.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Capability.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityClass.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityOwnerType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRule.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRules.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesChamberProfileDefaultDataFolder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesChamberProfileLiveTilesFolder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesChamberProfileMediaFolder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesChamberProfilePlatformDataFolder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesChamberProfileShellContentFolder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesDirectory.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesFile.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesInstallationFolder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesPrivilege.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesRegKey.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesSDRegValue.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesTransientObject.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CapabilityRulesWindows.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Certificate.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Certificates.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Chamber.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Chambers.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\CompilationState.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Component.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Components.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\ConsoleReport.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\ConstantStrings.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Directories.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Directory.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\DriverRule.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\DriverSecurity.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Executable.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Executables.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\ExecuteRule.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\FullTrust.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\GlobalVariables.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\HashCalculator.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\IPolicyElement.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\LogUtilityReport.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\MemberCapability.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\MemberCapabilityClass.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\NormalizedString.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\PathElement.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\PathElements.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\PathInheritanceType.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\PolicyCompiler.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\PolicyCompilerInternalException.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\PolicyXmlClass.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\PrincipalClass.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\PrivateResources.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\ReportingBase.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\RequiredCapabilities.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\RequiredCapability.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\RulePolicyElement.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\RuleWithPathInput.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\Service.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\SidBuilder.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\SidMapping.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Security.SecurityPolicyCompiler\WindowsRules.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PkgGenCommon\PkgGenCommon.csproj">
+      <Project>{7eb6ed08-f824-4322-ab8a-f4c863623c60}</Project>
+      <Name>PkgGenCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsCommon\ToolsCommon.csproj">
+      <Project>{877515e4-001d-4905-9616-7574bc7876b3}</Project>
+      <Name>ToolsCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

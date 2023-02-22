@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BFD4D18D-7A05-4C7C-BAB0-222C38C64DBF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Microsoft.Windows.ImageTools</RootNamespace>
+    <AssemblyName>ffutool</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Microsoft.Windows.ImageTools\ConsoleEx.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\DeviceStatus.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\DeviceStatusPosition.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\EtwSession.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\EventTraceProperties.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\ExitCode.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\FFUTool.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\FlashParam.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\LoggingModeConstant.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\NativeMethods.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\ProgressReporter.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\Resources.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\SetBootModeParam.cs" />
+    <Compile Include="Microsoft.Windows.ImageTools\TraceLevel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Microsoft.Windows.ImageTools.Properties.Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ffucomponents\ffucomponents.csproj">
+      <Project>{6644939d-0056-4c1f-b0c0-da80c408a9fa}</Project>
+      <Name>ffucomponents</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
