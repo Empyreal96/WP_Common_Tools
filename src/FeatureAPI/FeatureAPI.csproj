@@ -86,24 +86,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="FeatureManifest.xsd">
+    <EmbeddedResource Include="FeatureManifest.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="ImagingEditions.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImagingEditions.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="OEMInput.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OEMInput.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="UpdateHistory.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateHistory.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="UpdateOSInput.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOSInput.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="UpdateOSOutput.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOSOutput.xsd">
       <SubType>Designer</SubType>
-    </None>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ImagingEditions.xml" />

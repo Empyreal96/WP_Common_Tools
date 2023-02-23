@@ -167,12 +167,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins.xsd">
+    <EmbeddedResource Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.BasePlugins.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.ProjSchema.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.ProjSchema.xsd">
       <SubType>Designer</SubType>
-    </None>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Microsoft.WindowsPhone.ImageUpdate.PkgGenCommon.PkgGen.cfg.xml" />

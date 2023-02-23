@@ -47,9 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Microsoft.WindowsPhone.DeviceManagement.MCSF.ProjSchema.xsd">
+    <EmbeddedResource Include="Microsoft.WindowsPhone.DeviceManagement.MCSF.ProjSchema.xsd">
       <SubType>Designer</SubType>
-    </None>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MCSFOffline\MCSFOffline.csproj">

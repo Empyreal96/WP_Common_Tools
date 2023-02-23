@@ -53,9 +53,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Microsoft.WindowsPhone.Imaging.DeviceLayoutValidation.xsd">
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.DeviceLayoutValidation.xsd">
       <SubType>Designer</SubType>
-    </None>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Microsoft.WindowsPhone.Imaging.Microsoft.amd64_IoTUAP.DeviceLayoutValidation.xml" />

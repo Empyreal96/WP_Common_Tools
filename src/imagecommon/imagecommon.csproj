@@ -96,42 +96,54 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.BSPCompDB.xsd">
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.BSPCompDB.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.BuildCompDB.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.BuildCompDB.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.CompDBChunkMapping.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.CompDBChunkMapping.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.CompDBPublishingInfo.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.CompDBPublishingInfo.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.DeviceCompDB.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.DeviceCompDB.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.CompDB.UpdateCompDB.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.UpdateCompDB.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.DeviceLayout.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.DeviceLayout.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.DeviceLayoutv2.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.DeviceLayoutv2.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.FMCollection.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.FMCollection.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.OEMDevicePlatform.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.OEMDevicePlatform.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.PropsProject.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.PropsProject.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Microsoft.WindowsPhone.Imaging.PublishingPackageInfo.xsd">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.PublishingPackageInfo.xsd">
       <SubType>Designer</SubType>
-    </None>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CabApiWrapper\CabApiWrapper.csproj">

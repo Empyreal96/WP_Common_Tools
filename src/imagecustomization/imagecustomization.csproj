@@ -76,9 +76,10 @@
     <EmbeddedResource Include="Strings.resx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Customization.xsd">
+    <EmbeddedResource Include="Customization.xsd">
       <SubType>Designer</SubType>
-    </None>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CabApiWrapper\CabApiWrapper.csproj">
