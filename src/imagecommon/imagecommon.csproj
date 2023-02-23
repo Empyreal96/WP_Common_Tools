@@ -96,51 +96,51 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.BSPCompDB.xsd">
+    <EmbeddedResource Include="BSPCompDB.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.BuildCompDB.xsd">
+    <EmbeddedResource Include="BuildCompDB.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.CompDBChunkMapping.xsd">
+    <EmbeddedResource Include="CompDBChunkMapping.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.CompDBPublishingInfo.xsd">
+    <EmbeddedResource Include="CompDBPublishingInfo.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.DeviceCompDB.xsd">
+    <EmbeddedResource Include="DeviceCompDB.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.CompDB.UpdateCompDB.xsd">
+    <EmbeddedResource Include="UpdateCompDB.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.DeviceLayout.xsd">
+    <EmbeddedResource Include="DeviceLayout.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.DeviceLayoutv2.xsd">
+    <EmbeddedResource Include="DeviceLayoutv2.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.FMCollection.xsd">
+    <EmbeddedResource Include="FMCollection.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.OEMDevicePlatform.xsd">
+    <EmbeddedResource Include="OEMDevicePlatform.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.PropsProject.xsd">
+    <EmbeddedResource Include="PropsProject.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Microsoft.WindowsPhone.Imaging.PublishingPackageInfo.xsd">
+    <EmbeddedResource Include="PublishingPackageInfo.xsd">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
