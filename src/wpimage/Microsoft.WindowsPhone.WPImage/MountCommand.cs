@@ -103,6 +103,7 @@ namespace Microsoft.WindowsPhone.WPImage
 				}
 				imageStorageManager.WaitForVolume(ImageConstants.MAINOS_PARTITION_NAME);
 				string partitionPath = imageStorageManager.GetPartitionPath(ImageConstants.MAINOS_PARTITION_NAME);
+				fullFlashUpdateImage.DisplayImagePlatformID(logger);
 				Console.WriteLine("\tMain Mount Path: {0}", partitionPath);
 				if (!string.IsNullOrEmpty(text))
 				{

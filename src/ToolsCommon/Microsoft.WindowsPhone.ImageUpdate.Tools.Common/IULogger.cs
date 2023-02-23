@@ -198,6 +198,7 @@ namespace Microsoft.WindowsPhone.ImageUpdate.Tools.Common
 
 		public void LogInfo(string format, params object[] list)
 		{
+			
 			Log(LoggingLevel.Info, format, list);
 		}
 

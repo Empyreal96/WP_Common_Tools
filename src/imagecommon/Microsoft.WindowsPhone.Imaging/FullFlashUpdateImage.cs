@@ -1497,6 +1497,14 @@ namespace Microsoft.WindowsPhone.Imaging
 			return Guid.TryParse(partitionType, out result);
 		}
 
+		public void DisplayImagePlatformID(IULogger logger)
+        {
+			foreach (string devicePlatformID in DevicePlatformIDs)
+			{
+				logger.LogInfo("\tDevice Platform ID: {0}", devicePlatformID);
+			}
+		}
+
 		public void DisplayImageInformation(IULogger logger)
 		{
 			foreach (string devicePlatformID in DevicePlatformIDs)
@@ -1507,6 +1515,7 @@ namespace Microsoft.WindowsPhone.Imaging
 			logger.LogInfo(" ");
 			foreach (FullFlashUpdateStore store in Stores)
 			{
+				
 				logger.LogInfo("Store");
 				logger.LogInfo("\tSector Size: 0x{0:X}", store.SectorSize);
 				logger.LogInfo("\tID: {0}", store.Id);
@@ -1521,9 +1530,14 @@ namespace Microsoft.WindowsPhone.Imaging
 				logger.LogInfo(" ");
 				foreach (FullFlashUpdatePartition partition in store.Partitions)
 				{
+
 					logger.LogInfo("\tPartition");
 					logger.LogInfo("\t\tName: {0}", partition.Name);
+					logger.LogInfo("\t\tPartition ID: {0}", partition.PartitionId);
 					logger.LogInfo("\t\tPartition Type: {0}", partition.PartitionType);
+					logger.LogInfo("\t\tPartition FileSystem: {0}", partition.FileSystem);
+					logger.LogInfo("\t\tByte Alignment {0}", partition.ByteAlignment);
+					logger.LogInfo("\t\tCluster Size: {0}", partition.ClusterSize);
 					logger.LogInfo("\t\tTotal Sectors: 0x{0:X}", partition.TotalSectors);
 					logger.LogInfo("\t\tSectors In Use: 0x{0:X}", partition.SectorsInUse);
 					logger.LogInfo(" ");

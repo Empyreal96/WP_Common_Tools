@@ -182,11 +182,15 @@ namespace Microsoft.WindowsPhone.Imaging
 
 		public static string GetPartitionFileSystem(IntPtr serviceHandle, ImageStructures.STORE_ID storeId, string partitionName)
 		{
+			// Added for debugging why "Backup_BS_NV" fails after unlocking image with WPInternals
+			//Console.WriteLine($"Service Handle: {serviceHandle}, GUID: {storeId.StoreId_GPT}, Name: {partitionName}");
+			//
+
 			StringBuilder stringBuilder = new StringBuilder("fileSystem", 260);
 			int partitionFileSystem_Native = GetPartitionFileSystem_Native(serviceHandle, storeId, partitionName, stringBuilder, (uint)stringBuilder.Capacity);
 			if (Win32Exports.FAILED(partitionFileSystem_Native))
 			{
-				throw new ImageStorageException($"{MethodBase.GetCurrentMethod().Name}({partitionName}) failed: {partitionFileSystem_Native:x}");
+				throw new ImageStorageException($"{MethodBase.GetCurrentMethod().Name}({partitionName}) failed: {partitionFileSystem_Native:x}\n\n{serviceHandle}, {storeId}, {partitionName}, {(uint)stringBuilder.Capacity}");
 			}
 			return stringBuilder.ToString();
 		}

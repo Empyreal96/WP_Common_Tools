@@ -604,6 +604,10 @@ namespace Microsoft.WindowsPhone.Imaging
 				ImageStorage imageStorage = _storages[key];
 				foreach (FullFlashUpdateImage.FullFlashUpdatePartition partition in key.Partitions)
 				{
+					// Check on what is hanging when Flushing Drives
+					_logger.LogInfo($"Waiting for partiton: {partition.Name}");
+					//
+
 					imageStorage.WaitForVolume(partition.Name);
 					if (!imageStorage.PartitionIsMountedRaw(partition.Name))
 					{

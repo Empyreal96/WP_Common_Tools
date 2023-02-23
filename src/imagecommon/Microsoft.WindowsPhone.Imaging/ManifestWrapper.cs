@@ -18,6 +18,7 @@ namespace Microsoft.WindowsPhone.Imaging
 			long payloadSize2 = payloadSize + manifestRegion.Length;
 			innerWrapper.InitializeWrapper(payloadSize2);
 			innerWrapper.Write(manifestRegion);
+
 		}
 
 		public void ResetPosition()
