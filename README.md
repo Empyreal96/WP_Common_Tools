@@ -3,7 +3,9 @@ Compilable source of most .NET based tools and libraries from the Windows Phone 
 
 My aim currently is to allow generation of FFUs that have been unlocked through WPInternal's Test Code aimed at unlocking a device from Mass Storage Mode
 
-Current status: Not working, still figuring out how to get added FFU store partition information written to FFU.
+### What's different?
+- Extended information on FFU generation to show partition stores and partitions being flushed when finalizing (wpimage, ImageCommon, ImageStorageServiceManager)
+- Allowed *all* partitions to be processed in ffu generation, example is `backup_bs_nv` when a device is unlocked (ImageStorageServiceManager)
 
 - Referenced together to allow files to work together (If you use a custom exe with a stock library from the Kits you will get mismatched assembly error)
 - I use a different folder to the default settings for my Windows Phone Common Tools install, you may need to reference the location to files from YOUR kit if needed (Only a couple references will need changed)
