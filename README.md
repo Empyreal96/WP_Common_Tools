@@ -7,6 +7,8 @@ My aim currently is to allow generation of FFUs that have been unlocked through 
 - Extended information on FFU generation to show partition stores and partitions being flushed when finalizing (wpimage, ImageCommon, ImageStorageServiceManager)
 - Allowed *all* partitions to be processed in ffu generation, example is `backup_bs_nv` when a device is unlocked (ImageStorageServiceManager)
 
+
+### Notes
 - Referenced together to allow files to work together (If you use a custom exe with a stock library from the Kits you will get mismatched assembly error)
 - I use a different folder to the default settings for my Windows Phone Common Tools install, you may need to reference the location to files from YOUR kit if needed (Only a couple references will need changed)
 - Inspired from old decompiled source [IUTools Components Decompiled](https://github.com/Empyreal96/IUTool_components_decompiled)
