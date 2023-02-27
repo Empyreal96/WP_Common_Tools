@@ -190,7 +190,8 @@ namespace Microsoft.WindowsPhone.Imaging
 			int partitionFileSystem_Native = GetPartitionFileSystem_Native(serviceHandle, storeId, partitionName, stringBuilder, (uint)stringBuilder.Capacity);
 			if (Win32Exports.FAILED(partitionFileSystem_Native))
 			{
-				throw new ImageStorageException($"{MethodBase.GetCurrentMethod().Name}({partitionName}) failed: {partitionFileSystem_Native:x}\n\n{serviceHandle}, {storeId}, {partitionName}, {(uint)stringBuilder.Capacity}");
+				return "RAW";
+				//throw new ImageStorageException($"{MethodBase.GetCurrentMethod().Name}({partitionName}) failed: {partitionFileSystem_Native:x}\n\n{serviceHandle}, {storeId}, {partitionName}, {(uint)stringBuilder.Capacity}");
 			}
 			return stringBuilder.ToString();
 		}

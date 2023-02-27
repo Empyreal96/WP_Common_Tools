@@ -141,6 +141,7 @@
     <Compile Include="Microsoft.WindowsPhone.Imaging\StructVersionAttribute.cs" />
     <Compile Include="Microsoft.WindowsPhone.Imaging\UdpIdentifier.cs" />
     <Compile Include="Microsoft.WindowsPhone.Imaging\ValidationEntry.cs" />
+    <Compile Include="Microsoft.WindowsPhone.Imaging\ValidPartitions.cs" />
     <Compile Include="Microsoft.WindowsPhone.Imaging\ValueTypeChoice.cs" />
     <Compile Include="Microsoft.WindowsPhone.Imaging\VhdCommon.cs" />
     <Compile Include="Microsoft.WindowsPhone.Imaging\VhdExtensions.cs" />

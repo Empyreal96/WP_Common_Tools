@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Security;
@@ -19,7 +20,7 @@ namespace Microsoft.WindowsPhone.Imaging
 		private class PartitionInfo
 		{
 			public byte MbrType { get; set; }
-
+			
 			public Guid GptType { get; set; }
 
 			public byte MbrAttributes { get; set; }
@@ -649,6 +650,11 @@ namespace Microsoft.WindowsPhone.Imaging
 		public bool PartitionIsMountedRaw(string partitionName)
 		{
 			string partitionFileSystem = GetPartitionFileSystem(partitionName);
+			if (ValidPartitions.PartitionNames.Any(x => x.ToLower() == partitionName.ToLower()))
+			{
+				return true;
+			}
+			
 			if (string.Compare("RAW", partitionFileSystem, true, CultureInfo.InvariantCulture) == 0)
 			{
 				return true;

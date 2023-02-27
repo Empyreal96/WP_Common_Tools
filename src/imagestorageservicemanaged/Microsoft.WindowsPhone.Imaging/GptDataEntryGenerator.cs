@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using Microsoft.Win32.SafeHandles;
 
 namespace Microsoft.WindowsPhone.Imaging
@@ -203,7 +204,10 @@ namespace Microsoft.WindowsPhone.Imaging
 			for (int i = 0; i < dataBlocks.Count; i++)
 			{
 				DataBlockEntry dataBlockEntry = dataBlocks[i];
-				if (dataBlockEntry.DataSource.Source == DataBlockSource.DataSource.Disk && _storageAllocation != null && !_storageAllocation.BlockIsAllocated(dataBlockEntry.DataSource.StorageOffset))
+				var partitionEntries = _table.Entries;
+				if (dataBlockEntry.DataSource.Source == DataBlockSource.DataSource.Disk && _storageAllocation != null &&
+					!_storageAllocation.BlockIsAllocated(dataBlockEntry.DataSource.StorageOffset) ||
+					partitionEntries.Any(x => ValidPartitions.PartitionNames.Any(y => y.ToLower() == x.PartitionName.ToLower() && x.StartingSector * 0x200 <= dataBlockEntry.DataSource.StorageOffset && dataBlockEntry.DataSource.StorageOffset <= x.LastSector * 0x200)))
 				{
 					dataBlocks.RemoveAt(i--);
 				}
