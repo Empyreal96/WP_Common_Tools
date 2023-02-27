@@ -7,6 +7,13 @@ Compilable source of most .NET based tools and libraries from the Windows Phone 
 - Used ILSpy to decompile the binaries
 - Targets .NET Framework 4.6 with VS2019
 
+### Notes
+- Some `.xsd` file may need to be renamed, I haven't tested every app/library that depends on these files.
+- My changes are in the "custom" branch.
+- Some files either didn't decompile well, or I didn't feel the need to decompile so they haven't been included.
+- These were reversed from the Windows 10 Build 14974 WDK tools.
+- This branch will not receive further updates from me, it serves as a template
+
 
 ### Libraries:
 
